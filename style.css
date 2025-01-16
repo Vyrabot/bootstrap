@@ -1,0 +1,135 @@
+.logo {
+  font-weight: bold;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.6em;
+}
+.navbar {
+  position: fixed;
+  z-index: 100px;
+  padding: 1em 2em;
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 20px 0px gray;
+  z-index: 1000;
+}
+.humburger-icon {
+  border: none;
+}
+.main-section {
+  height: 100vh;
+  width: 100%;
+  background: #37517e;
+}
+.main-section-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-section-container h2 {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.main-section-container p {
+  color: white;
+  font-family: sans-serif;
+  opacity: 0.7;
+}
+h3 {
+  color: #37517e;
+}
+.line {
+  width: 60px;
+  height: 2px;
+  background: gray;
+}
+.main-line {
+  width: 20px;
+  height: 6px;
+  position: absolute;
+  background: gray;
+}
+.about-right {
+  overflow: hidden;
+}
+.about-right:hover img {
+  transform: rotate(10deg) scale(1.1);
+}
+.service-box {
+  height: 100%;
+  padding: 60px 30px;
+  text-align: center;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.fa-solid {
+  font-size: 2em;
+  color: rgb(13, 110, 253);
+  border-radius: 2em;
+  padding: 0.8em;
+  background: rgba(128, 128, 128, 0.181);
+}
+.service-box:hover {
+  transform: scale(1.08);
+}
+.service-box:hover .fa-solid {
+  color: #37517e;
+}
+.project-box {
+  overflow: hidden;
+  position: relative;
+  height: 20em;
+}
+.project-box img {
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+.box-cover {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-cover button {
+  z-index: 10;
+  transition: 0.5s;
+  opacity: 0;
+}
+.project-box:hover img {
+  transform: scale(1.1);
+  filter: blur(2px);
+}
+.project-box:hover .box-cover button {
+  opacity: 1;
+}
+.contact-img {
+  border-radius: 5px;
+}
+.contact-img:hover img {
+  scale: 0.9;
+}
+@keyframes logoanimation {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(70px);
+  }
+}
+.right {
+  animation: logoanimation 5s infinite;
+}
